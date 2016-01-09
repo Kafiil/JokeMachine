@@ -1,0 +1,23 @@
+{
+  "name": "JokeMachine",
+  "authors": [
+    "Kafil NASDAMI <kafil.nasdami@gmail.com>"
+  ],
+  "description": "A machine that generates random jokes",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "joke",
+    "random",
+    "machine"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
