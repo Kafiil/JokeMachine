@@ -1,0 +1,31 @@
+{
+  "name": "quotemachine",
+  "version": "1.0.0",
+  "description": "Randomly get quote from very wise people",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kafiil/JokeMachine.git"
+  },
+  "keywords": [
+    "quote",
+    "random",
+    "wise",
+    "people"
+  ],
+  "author": "Kafil NASDAMI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kafiil/JokeMachine/issues"
+  },
+  "homepage": "https://github.com/Kafiil/JokeMachine#readme",
+  "devDependencies": {
+    "grunt-contrib-jade": "^0.15.0",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-wiredep": "^2.0.0"
+  }
+}

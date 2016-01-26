@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <title>Joke Machine</title>
-  <link rel="stylesheet" href="bower_components\bootstrap\dist\css\bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-10 col-xs-offset-1">
-        <h1 class="text-center text-primary">
-          Random wise words</h1>
-
-        <div class="jumbotron">
-          <h1 class="text-center">Quote</h1>
-          <br>
-          <br>
-          <p id="quote"></p>
-          <div class="btn  btn-success" id="newQ">
-            <i class="fa fa-plus fa-3x"></i> New Quote</div>
-          <div class="btn  btn-info" id="share">
-            <i class="fa fa-twitter fa-3x"></i> Share on twitter</div>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- bower:css-->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+    <!-- endbower-->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1">
+          <h1 class="text-center">Random wise words</h1>
+          <h2 class="text-center">from random wise people</h2>
+          <div class="jumbotron">
+            <h1 class="text-center">Quote</h1>
+            <p id="quote"></p>
+            <div class="row pull-right"><a id="newQ" class="btn btn-success"><i class="fa fa-plus fa-2x"> New Quote</i></a>
+              <div id="share" class="btn btn-info"><i class="fa fa-twitter fa-2x"> Tweet</i></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="bower_components\jquery\dist\jquery.min.js"></script>
-  <script src="app.js"></script>
-</body>
-
+    <!-- bower:js-->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- endbower-->
+    <script src="app.js"></script>
+  </body>
 </html>
