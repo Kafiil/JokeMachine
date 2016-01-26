@@ -12,12 +12,16 @@
     "machine"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/Kafiil/JokeMachine",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.5.0"
+  }
 }

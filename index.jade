@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title
+    // bower:css
+    link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='bower_components/font-awesome/css/font-awesome.min.css')
+    // endbower
+    link(rel='stylesheet', href='style.css')
+  body
+    .container-fluid
+      .row
+        .col-xs-10.col-xs-offset-1
+          h1.text-center
+            | Random wise words
+          h2.text-center from random wise people
+          .jumbotron
+            h1.text-center Quote
+            p#quote
+            .row.pull-right
+              a#newQ.btn.btn-success
+                i.fa.fa-plus.fa-2x  New Quote
+              #share.btn.btn-info
+                i.fa.fa-twitter.fa-2x  Tweet
+    // bower:js
+    script(src='bower_components/jquery/dist/jquery.js')
+    script(src='bower_components/bootstrap/dist/js/bootstrap.js')
+    // endbower
+    script(src='app.js')
