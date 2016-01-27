@@ -18,11 +18,14 @@ html
           .jumbotron
             h1.text-center Quote
             p#quote
-            .row.pull-right
-              a#newQ.btn.btn-success
-                i.fa.fa-plus.fa-2x  New Quote
-              #share.btn.btn-info
-                i.fa.fa-twitter.fa-2x  Tweet
+            .row
+              .col-xs-offset-8.col-xs-4
+                a#newQ.btn.btn-danger
+                  i.fa.fa-plus.fa-2x  
+                    span  New 
+                #share.btn.btn-info
+                  i.fa.fa-twitter.fa-2x  
+                    span  Tweet
     // bower:js
     script(src='bower_components/jquery/dist/jquery.js')
     script(src='bower_components/bootstrap/dist/js/bootstrap.js')

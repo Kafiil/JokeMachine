@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 body {
-  background-color: #89C4F4;
+  background-color: #29B6F6;
   font-family: "Roboto"; }
 
 h1 {
@@ -13,19 +13,28 @@ h2 {
   color: #e53935; }
 
 .btn-info {
-  background-color: #1B95E0; }
+  background-color: #29B6F6; }
   .btn-info:hover {
-    background-color: #1B95E0; }
+    background-color: #29B6F6; }
+
+.btn-danger {
+  background-color: #e53935; }
 
 .jumbotron {
-  margin: 5% auto;
-  background-color: #F5F5F5; }
+  margin: 5% auto 1%;
+  background-color: #F5F5F5;
+  padding: 15px; }
 
 #quote {
   margin: 5% auto;
+  height: 150px;
   font-size: 2.5em; }
 
-i {
+.fa span {
+  font-weight: 400;
+  font-size: 0.9em;
   font-family: "Roboto"; }
+  .fa span:before {
+    content: "\00a0 "; }
 
 /*# sourceMappingURL=style.css.map */
