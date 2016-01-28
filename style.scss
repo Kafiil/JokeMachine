@@ -1,7 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
+// Colors
+$blue: #29B6F6;
+
 body {
-  background-color: #29B6F6;
+  background-color:$blue ;
   font-family: "Roboto";
 }
 h1 {
@@ -13,9 +16,9 @@ h2 {
   color: #e53935;
 }
 .btn-info {
-  background-color: #29B6F6;
+  background-color: $blue;
   &:hover {
-    background-color: #29B6F6;
+    background-color: $blue;
   }
 
 }

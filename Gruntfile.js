@@ -1,6 +1,21 @@
 module.exports = function(grunt) {
   //initConfig method
   grunt.initConfig({
+    browserSync: {
+            dev: {
+                bsFiles: {
+                    src : [
+                        '**/*.css',
+                        '**/*.html',
+                        '**/*.jade'
+                    ]
+                },
+                options: {
+                    watchTask: true,
+                    server: '.'
+                }
+            }
+        },
     sass: { // Task
       dist: { // Target
 
@@ -58,8 +73,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  //browsrSync task
+  grunt.loadNpmTasks('grunt-browser-sync');
+
 
 
   //register tasks
-  grunt.registerTask('default', ['sass', 'jade', 'wiredep', 'watch']);
+  grunt.registerTask('default', ['sass', 'jade','browserSync','watch']);
 }
