@@ -2,20 +2,20 @@ module.exports = function(grunt) {
   //initConfig method
   grunt.initConfig({
     browserSync: {
-            dev: {
-                bsFiles: {
-                    src : [
-                        '**/*.css',
-                        '**/*.html',
-                        '**/*.jade'
-                    ]
-                },
-                options: {
-                    watchTask: true,
-                    server: '.'
-                }
-            }
+      dev: {
+        bsFiles: {
+          src: [
+            '**/*.*css',
+            '**/*.html',
+            '**/*.jade'
+          ]
         },
+        options: {
+          watchTask: true,
+          server: '.'
+        }
+      }
+    },
     sass: { // Task
       dist: { // Target
 
@@ -25,7 +25,6 @@ module.exports = function(grunt) {
         }
       }
     },
-
     jade: {
       compile: {
         options: {
@@ -42,27 +41,11 @@ module.exports = function(grunt) {
     watch: {
       buil: {
         files: ['**/*.jade', '**/*.*css'],
-        tasks: ['jade', 'wiredep', 'sass'],
+        tasks: ['sass', 'jade', 'browserSync'],
         options: {
           livereload: true,
         },
       },
-    },
-
-    wiredep: {
-      task: {
-        // Point to the files that should be updated when
-        // you run `grunt wiredep`
-        src: [
-          '**/*.html', // .html support...
-          '**/*.jade', // .jade support...
-        ],
-        options: {
-          // See wiredep's configuration documentation for the options
-          // you may pass:
-          // https://github.com/taptapship/wiredep#configuration
-        }
-      }
     }
   });
 
@@ -79,5 +62,5 @@ module.exports = function(grunt) {
 
 
   //register tasks
-  grunt.registerTask('default', ['sass', 'jade','browserSync','watch']);
+  grunt.registerTask('default', ['sass', 'jade','browserSync','watch' ]);
 }
