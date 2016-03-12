@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 body {
   background-color: #29B6A6;
+  background:linear-gradient(to left, #517fa4, #243949);
   font-family: "Roboto"; }
 
 h1 {
