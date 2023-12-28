@@ -12,7 +12,7 @@ $("#share").click(function() {
 });
 
 var newOne = function() {
-  $.get("http://api.icndb.com/jokes/random", function(data) {
-    $("#quote").html(data.value.joke);
+  $.get("https://icanhazdadjoke.com/", function(data) {
+    $("#quote").html(data.joke);
   });
 }
