@@ -3,8 +3,10 @@ html
   head
     meta(charset='utf-8')
     title
-    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
-    link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+    // bower:css
+    link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='bower_components/font-awesome/css/font-awesome.min.css')
+    // endbower
     link(rel='stylesheet', href='style.css')
   body
     .container-fluid
@@ -17,14 +19,15 @@ html
             h1.text-center Quote
             p#quote
             .row
-              .col-xs-offset-7.col-xs-5
+              .col-xs-offset-8.col-xs-4
                 a#newQ.btn.btn-danger
-                  i.fa.fa-plus  
+                  i.fa.fa-plus.fa-2x  
                     span  New 
                 #share.btn.btn-info
-                  i.fa.fa-twitter  
+                  i.fa.fa-twitter.fa-2x  
                     span  Tweet
-    
-    script(src='https://code.jquery.com/jquery-2.2.0.min.js')
-    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+    // bower:js
+    script(src='bower_components/jquery/dist/jquery.js')
+    script(src='bower_components/bootstrap/dist/js/bootstrap.js')
+    // endbower
     script(src='app.js')

@@ -1,14 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
-// Colors
-$blue: #29B6A6;
-
 body {
-  background-color:$blue ;
+  background-color: #29B6F6;
   font-family: "Roboto";
 }
 h1 {
-  font-size: 4.5em;
+  font-size: 7rem;
   font-family: "Pacifico";
 }
 h2 {
@@ -16,9 +13,9 @@ h2 {
   color: #e53935;
 }
 .btn-info {
-  background-color: $blue;
+  background-color: #29B6F6;
   &:hover {
-    background-color: $blue;
+    background-color: #29B6F6;
   }
 
 }
@@ -33,13 +30,13 @@ h2 {
 }
 #quote {
   margin: 5% auto;
-  height: 180px;
-  font-size: 2em;
+  height: 150px;
+  font-size: 2.5em;
 }
 
 .fa span{
   font-weight: 400;
-  font-size: 1em;
+  font-size: 0.9em;
   font-family:"Roboto" ;
   &:before { content: "\00a0 "; }
 }

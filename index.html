@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- bower:css-->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+    <!-- endbower-->
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -17,16 +19,18 @@
             <h1 class="text-center">Quote</h1>
             <p id="quote"></p>
             <div class="row">
-              <div class="col-xs-offset-7 col-xs-5"><a id="newQ" class="btn btn-danger"><i class="fa fa-plus"> <span> New </span></i></a>
-                <div id="share" class="btn btn-info"><i class="fa fa-twitter"> <span> Tweet</span></i></div>
+              <div class="col-xs-offset-8 col-xs-4"><a id="newQ" class="btn btn-danger"><i class="fa fa-plus fa-2x"> <span> New </span></i></a>
+                <div id="share" class="btn btn-info"><i class="fa fa-twitter fa-2x"> <span> Tweet</span></i></div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- bower:js-->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- endbower-->
     <script src="app.js"></script>
   </body>
 </html>
