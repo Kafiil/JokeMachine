@@ -1,18 +1,27 @@
-$(document).ready(function() {
+$(document).ready(function () {
   newOne();
 });
 
-$("#newQ").click(function() {
+$("#newQ").click(function () {
   newOne();
 });
 
-$("#share").click(function() {
+$("#share").click(function () {
   var value = $("#quote").text();
   console.log(value);
 });
 
-var newOne = function() {
-  $.get("https://icanhazdadjoke.com/", function(data) {
-    $("#quote").html(data.joke);
+var newOne = function () {
+  $.ajax({
+    url: 'https://icanhazdadjoke.com/',
+    method: 'GET',
+    headers: {
+      'Accept': 'application/json',
+
+    },
+    success: function (data) {
+      console.log(data)
+      $("#quote").html(data.joke);
+    }
   });
 }
